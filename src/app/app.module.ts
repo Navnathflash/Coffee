@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { GeolocationService } from './geolocation.service'
 
 import { AppComponent } from './app.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule
   ],
-  providers: [GeolocationService],
+  providers: [GeolocationService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
